@@ -3,204 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ResumeBuilder - Create Professional Resumes</title>
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>Resume <span>Builder</span></h1>
-            </div>
             <nav>
+                <div class="logo">Portfolio</div>
                 <ul class="nav-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#templates">Templates</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </nav>
-            <div class="cta-buttons">
-                <a href="sign in.html" class="btn btn-secondary">Sign In</a>
-                <a href="builder.html" class="btn btn-primary">Get Started</a>
-            </div>
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Create a Professional Resume in <span>Minutes</span></h1>
-                <p>Build a standout resume that gets you noticed by top employers. Easy to use, professional templates, and expert guidance.</p>
-                <div class="hero-cta">
-                    <a href="builder.html" class="btn btn-primary btn-large">Create My Resume</a>
-                    <a href="#templates" class="btn btn-outline">View Templates</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="undraw_global-team_8jok.svg" alt="Resume Builder Preview">
-            </div>
-        </div>
-    </section>
-
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose Our Resume Builder</h2>
-                <p>Everything you need to create a professional, job-winning resume</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-file-alt"></i>
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight"><br>Sipun Pradhan</span></h1>
+                    <h2>BTech CSE Student</h2>
+                    <p class="animate-text" style="animation: slideIn 1s ease-out forwards;">Passionate about software development, Advance UI/UX design, and creating innovative solutions.</p>
+                    <style>
+                        @keyframes slideIn {
+                            0% {
+                                opacity: 0;
+                                transform: translateY(20px);
+                            }
+                            100% {
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
+                        }
+                        .animate-text {
+                            opacity: 0;
+                        }
+                    </style>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="#projects" class="btn secondary-btn">View Projects</a>
                     </div>
-                    <h3>Professional Templates</h3>
-                    <p>Choose from dozens of professionally designed templates that catch the eye of recruiters.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-magic"></i>
+                    <div class="social-icons">
+                        <a href="https://github.com/sipun-hash" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sipun-pradhan-501959301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Sipun_cpun?t=56A1XpijNEasaGluAkCwxw&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:sipunpradhan801@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/sipunpradhan.s?igsh=NHdtdW9iMm1pbmd5" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <h3>Easy Customization</h3>
-                    <p>Personalize your resume with custom colors, fonts, and layouts to match your style.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                    <h3>Export Options</h3>
-                    <p>Download your resume as PDF, DOCX, or share a direct link with potential employers.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Mobile Friendly</h3>
-                    <p>Build and edit your resume on any device - desktop, tablet, or smartphone.</p>
+                <div class="hero-image">
+                    <img src="1738593094038 - Copy.jpg" alt="Profile Image" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 20px rgba(0,0,0,0.2); border: 5px solid rgb(127, 49, 245); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="templates" class="templates">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2>Professional Resume Templates</h2>
-                <p>Select from our collection of professionally designed templates</p>
-            </div>
-            <div class="templates-slider">
-                <div class="template-card">
-                    <div class="template-preview">
-                        <img src="Screenshot 2025-06-05 150945.png" alt="Modern Template">
-                    </div>
-                    <div class="template-info">
-                        <h3>Modern</h3>
-                        <p>Clean and contemporary design</p>
-                        <a href="#" class="btn btn-secondary">Use Template</a>
-                    </div>
-                </div>
-                <div class="template-card">
-                    <div class="template-preview">
-                        <img src="my CV(5).pdf" alt="Professional Template">
-                    </div>
-                    <div class="template-info">
-                        <h3>Professional</h3>
-                        <p>Traditional and trusted format</p>
-                        <a href="#" class="btn btn-secondary">Use Template</a>
-                    </div>
-                </div>
-                <div class="template-card">
-                    <div class="template-preview">
-                        <img src="Screenshot 2025-06-10 101837.png" alt="Creative Template">
-                    </div>
-                    <div class="template-info">
-                        <h3>Creative</h3>
-                        <p>Stand out with unique design</p>
-                        <a href="#" class="btn btn-secondary">Use Template</a>
-                    </div>
-                </div>
-                <div class="template-card">
-                    <div class="template-preview">
-                        <img src="Screenshot 2025-06-10 101837.png" alt="Creative Template">
-                    </div>
-                    <div class="template-info">
-                        <h3>Creative</h3>
-                        <p>Stand out with unique design</p>
-                        <a href="#" class="btn btn-secondary">Use Template</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-controls">
-                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
-                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a BTech Computer Science and Engineering student with a passion for technology and innovation. My journey in the world of computer science began when I was in high school, and since then, I've been exploring various domains within the field.</p>
+                <p>I enjoy solving complex problems and building Web-applications that can make a difference. My areas of interest include web development, Graphic design, and data science.</p>
+                <a href="my CV.pdf" download="" class="btn primary-btn" download>Download CV</a>
             </div>
         </div>
     </section>
 
-    <section class="how-it-works">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header">
-                <h2>How It Works</h2>
-                <p>Create your professional resume in three simple steps</p>
-            </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Choose a Template</h3>
-                        <p>Select from our professionally designed resume templates that suit your style and industry.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Add Your Content</h3>
-                        <p>Fill in your details with our easy-to-use editor. Add work experience, skills, education, and more.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Download & Share</h3>
-                        <p>Download your resume as a PDF or DOCX file, or share a direct link with potential employers.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Users Say</h2>
-                <p>Success stories from people who landed their dream jobs</p>
-            </div>
-            <div class="testimonials-container">
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"I created my resume in less than an minute and i hope you love d this site. The templates are professional and really stand out!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="1738593094041.jpg" alt="User Avatar">
-                        <div class="author-info">
-                            <h4>Swagatam Nayak</h4>
-                            <p>Marketing Specialist</p>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>Java</p>
+                                <p>20%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>Python</p>
+                                <p>25%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>C/C++</p>
+                                <p>30%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>JavaScript</p>
+                                <p>25%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"After struggling with my resume for weeks, I found this builder and created a perfect resume in minutes. Let's build resume in minutes!"</p>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>HTML/CSS</p>
+                                <p>95%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>React.js</p>
+                                <p>40%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>Node.js</p>
+                                <p>10%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>MongoDB</p>
+                                <p>0%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%;"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="testimonial-author">
-                        <img src="1738593094038 - Copy.jpg" alt="User Avatar">
-                        <div class="author-info">
-                            <h4>Sipun Pradhan</h4>
-                            <p>Software Developer</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Other Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>Data Structures & Algorithms</p>
+                                <p>15%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>Machine Learning</p>
+                                <p>0%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>Git & GitHub</p>
+                                <p>70%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <p>Problem Solving</p>
+                                <p>25%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,97 +217,233 @@
         </div>
     </section>
 
-    <section class="cta-section">
+    <!-- Education Section -->
+    <section id="education" class="education">
         <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Create Your Professional Resume?</h2>
-                <p>Join thousands of job seekers who have successfully landed their dream jobs</p>
-                <a href="builder.html" class="btn btn-primary btn-large">Get Started Now</a>
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology in Computer Science</h3>
+                        <p class="timeline-date">2023 - 2027</p>
+                        <p class="timeline-institution">Sophitorium Engineering College,Khordha</p>
+                        <p>CGPA: 8.95/10</p>
+                        <p>Relevant Coursework: Database Management Systems, Operating Systems,UI/UX Designer, Computer Networks, Web Development</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary Education (Class XII)</h3>
+                        <p class="timeline-date">2021 - 2023</p>
+                        <p class="timeline-institution">Nalanda +2 Science College, Brahampur</p>
+                        <p>Percentage: 79.5%</p>
+                        <p>Stream: Science (PCM)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Secondary Education (Class X)</h3>
+                        <p class="timeline-date">2020</p>
+                        <p class="timeline-institution">Govt. UG High School, kumarpani</p>
+                        <p>Percentage: 74.33%</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-sec">
-        <h2 class="section-titl">contact</h2>
-
-        <div class="last">
-            <div class="hero-image1">
-                    <img src="bf27eecf8433ad7eed7dc7e90541fe47.jpg" alt="Resume Builder Preview">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ml">UI/UX</button>
+                <button class="filter-btn" data-filter="app">App</button>
             </div>
-            <div class="contact-form">
-                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-                    <input type="hidden" name="access_key" value="f1940390-4dd6-4c81-8ab2-ca54c1698d54">
-                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-05-05 211600.png" alt="Project 1">
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <div class="project-info">
+                        <h3>College Management Website</h3>
+                        <p>A full-stack college management platform built with HTML,CSS, Node.js, and java script. Features include Student Admission and payment integration.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Database</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sipun-hash" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="first.html" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-05-07 200354.png" alt="Project 2">
                     </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <div class="project-info">
+                        <h3>landing page</h3>
+                        <p>A landing page created for improving my experience in this frontend field.</p>
+                        <div class="project-tags">
+                            <span>Html</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sipun-hash" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="second.html" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <div id="formStatus"></div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-05-07 201052.png" alt="Project 3">
                     </div>
-                    <button type="submit" class="btn1 primary-btn" id="submitBtn">
-                        <span>Send Message</span>
-                        <div class="loading-spinner" style="display: none;"></div>
-                    </button>
-                </form>
+                    <div class="project-info">
+                        <h3>Smart Utility Tool Kit</h3>
+                        <p>Project in continue...<br>A website where you can do multiple task like QR code generator, Image size compressor multiple task.</p>
+                        <div class="project-tags">
+                            <span>Html</span>
+                            <span>Css</span>
+                            <span>JS</span>
+                            <span>Reactjs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sipun-hash" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="third.html" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Removed the last 3 project cards (Weather Dashboard, Sentiment Analysis Tool, and Fitness Tracker) -->
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">How to reach Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>sipunpradhan801@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 9337741208</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Bhubaneswar, Odisha, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/sipun-hash" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sipun-pradhan-501959301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Sipun_cpun?t=56A1XpijNEasaGluAkCwxw&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/sipunpradhan.s?igsh=NHdtdW9iMm1pbmd5" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+
+                
+                <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <input type="hidden" name="access_key" value="f1940390-4dd6-4c81-8ab2-ca54c1698d54">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div id="formStatus"></div>
+                        </div>
+                        <button type="submit" class="btn primary-btn" id="submitBtn">
+                            <span>Send Message</span>
+                            <div class="loading-spinner" style="display: none;"></div>
+                        </button>
+                    </form>
+                </div>
+
+                <style>
+                .loading-spinner {
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid #ffffff;
+                    border-radius: 50%;
+                    border-top-color: transparent;
+                    animation: spin 1s linear infinite;
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+                
+                @keyframes spin {
+                    to {transform: rotate(360deg);}
+                }
+                
+                #formStatus {
+                    padding: 10px;
+                    margin: 10px 0;
+                    border-radius: 4px;
+                    display: none;
+                }
+                
+                #formStatus.success {
+                    background-color: #d4edda;
+                    color: #155724;
+                    border: 1px solid #c3e6cb;
+                    display: block;
+                }
+                
+                #formStatus.error {
+                    background-color: #f8d7da;
+                    color: #721c24;
+                    border: 1px solid #f5c6cb;
+                    display: block;
+                }
+                </style>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Resume<span>Builder</span></h2>
-                    <p>Create professional resumes in minutes</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h3>Product</h3>
-                        <ul>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Templates</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Resources</h3>
-                        <ul>
-                            <li><a href="#">Resume Tips</a></li>
-                            <li><a href="#">Career Advice</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 ResumeBuilder. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+            <p>&copy; 2025 sipunpradhan801. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script src="contact.js"></script>
 </body>
 </html>
